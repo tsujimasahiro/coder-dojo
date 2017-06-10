@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>計算</title>
+        <script>
+            function func01() {
+                var a = document.getElementById("i0").value;
+                var b = document.getElementById("i1").value;
+                var aint = parseInt(a);
+                var bint = parseInt(b);
+                document.getElementById("r0").textContent = (aint + bint);
+                document.getElementById("r1").textContent = (aint - bint);
+                document.getElementById("r2").textContent = (aint * bint);
+                document.getElementById("r3").textContent = (aint / bint);
+                document.getElementById("r4").textContent = (aint % bint);
+                document.getElementById("r5").textContent = (aint == bint);
+            }
+        </script>
+    </head>
+    <body>
+        <h1>計算</h1>
+        a:<input id="i0" />
+        b:<input id="i1" />
+        <button onclick="func01()">実行</button>
+        <p>実行結果</p>
+        <ul>
+            <li>a + b : <span id="r0"></span></li>
+            <li>a - b : <span id="r1"></span></li>
+            <li>a * b : <span id="r2"></span></li>
+            <li>a / b : <span id="r3"></span></li>
+            <li>a % b : <span id="r4"></span></li>
+            <li>a == b : <span id="r5"></span></li>
+        </ul>
+    </body>
+</html>
